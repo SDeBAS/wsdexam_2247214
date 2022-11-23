@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{   
+    background: rgb(53, 52, 52);
+    font-family: "Bahnschrift";
+    color: #fff;
+
+}
+
+.card
+{
+   width: 25rem;
+   height: 26rem; 
+    margin: 8.5rem 32rem ;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    color:rgb(53, 52, 52) ;
+}
+
+.card h2
+{
+    
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.card .form
+{
+   margin-top: 3rem;
+}
+
+.card .form label
+{
+    font-size: 20px;
+    color:rgb(94, 92, 92);
+}
+
+.card .form  #name
+{
+    margin-top: 0.6rem;
+    margin-bottom: 0.8rem;
+    border: solid 0.3px rgb(94, 92, 92) ;
+    border-radius: 3px;
+    width: 340px;
+    height: 30px;
+}
+
+.card .form  #submit
+{
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 2rem;
+    background-color:rgb(53, 52, 52);
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.card .link a
+{
+    text-decoration: none;
+    color:rgb(53, 52, 52) ;
+}
+
+header, footer
+{
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    color: rgb(53, 52, 52);
+}

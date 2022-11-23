@@ -1,0 +1,39 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Company">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Employee" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="emp_name" type="xs:string">
+                            </xs:element>
+
+                            <xs:element name="emp_age" type="xs:integer">
+                            </xs:element>
+                            <xs:element name="emp_salary">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minInclusive value="50000" />
+                                        <xs:maxInclusive value="200000" />
+                                     </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="emp_emailid" type="xs:string">
+                            </xs:element>
+                            
+                            <xs:element name="emp_Phonenum" type="xs:integer">
+                            </xs:element>
+                            <xs:element name="emp_designation" type="xs:string">
+                            </xs:element>
+
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:unique name="MyID">
+            <xs:selector xpath="Employee" />
+            <xs:field xpath="@pid" />
+        </xs:unique>
+    </xs:element>
+</xs:schema>
